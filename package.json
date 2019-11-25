@@ -15,27 +15,27 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-        "commands": [
-            {
-                "command": "extension.dblightmodel",
-			"title": "Write DbLight Model"
-            }
-        ],
-        "menus": {
-            "explorer/context": [
-                {
-                    "command": "extension.dblightmodel",
-                    "group": "z_dblight"
-                }
-            ],
-            "editor/context": [
-                {
-                    "command": "extension.dblightmodel",
-                    "group": "z_dblight"
-                }
-            ]
-        }
-    },
+		"commands": [
+			{
+				"command": "extension.dblightmodel",
+				"title": "Write Database Models"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.dblightmodel",
+					"group": "z_dblight"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "extension.dblightmodel",
+					"group": "z_dblight"
+				}
+			]
+		}
+	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",
