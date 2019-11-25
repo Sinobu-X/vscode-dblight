@@ -1,0 +1,10 @@
+.idea/
+.vs/
+.vscode/
+.DS_Store
+release/
+bin/
+obj/
+out/
+*.nupkg
+node_modules
