@@ -21,11 +21,10 @@ export function activate(context: vscode.ExtensionContext) {
 		// console.log(selectedFiles);
 
 		selectedFiles.forEach((filepath) => {
-			console.log(DbTable.read(filepath.path));
+			var table = DbTable.load(filepath.path);
+			// Display a message box to the user
+			vscode.window.showInformationMessage(`Table ${table.category}.${table.code} loaded.`);
 		});
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World for DbLight Model!');
 	});
 
 	context.subscriptions.push(disposable);

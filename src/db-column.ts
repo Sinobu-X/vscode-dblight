@@ -6,6 +6,7 @@ export default class DbColumn {
     name: string = '';
     dataType: string= '';
     size: number = 0;
-    enums: {key: string, value: any}[] = [];
-
+    nullable: boolean = true;
+    isPK: boolean = false;
+    values: {key: string, value: any}[] = [];
 }
